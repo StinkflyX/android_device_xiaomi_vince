@@ -46,6 +46,9 @@ TARGET_USES_64_BIT_BINDER := true
 
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # Kernel
 TARGET_KERNEL_CONFIG := vince_defconfig
 BOARD_KERNEL_BASE := 0x80000000
